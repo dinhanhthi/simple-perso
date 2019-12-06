@@ -6,6 +6,7 @@ A simple and beautiful personal jekyll theme designed by [DINH Anh-Thi](http://d
 
 ## Installation
 
+- 🌟 [Demo](https://dinhanhthi.github.io/simple-perso/)
 - ⚙ [How to install?](https://dinhanhthi.github.io/simple-perso/how-to-install)
 - 🛠 [How to modify?](https://dinhanhthi.github.io/simple-perso/simple-perso/how-to-modify-this-time)
 - ✨ [How to use?](https://dinhanhthi.github.io/simple-perso/how-to-use)
