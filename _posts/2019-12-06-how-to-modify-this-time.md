@@ -5,6 +5,7 @@ subtitle: Make this theme be yours
 tags: [others]
 categories: others
 icon-photo: modify.png
+date: 2019-06-11
 ---
 
 {% include toc.html %}
