@@ -1,0 +1,23 @@
+I"D<div id="toc">
+  <div class="toc-title">
+    <i class="fa fa-list-ul"></i><span>In this post</span>
+  </div>
+  <div class="toc-content">
+<ul id="markdown-toc">
+  <li><a href="#your-personal-info" id="markdown-toc-your-personal-info">Your personal info</a></li>
+</ul>
+
+  </div>
+</div>
+
+<h2 id="your-personal-info">Your personal info</h2>
+
+<p>Open file <code class="highlighter-rouge">_data\me.yml</code> and modify (you don’t have to give all infos):</p>
+
+<ul>
+  <li><code class="highlighter-rouge">name</code>: your name, e.g. <em>Anh-Thi DINH</em>.</li>
+  <li><code class="highlighter-rouge">shor_name</code>: your short name (forename), e.g. <em>Thi</em>.</li>
+  <li><code class="highlighter-rouge">email</code>: your email, e.g. <em>dinhanhthi@gmail.com</em>.</li>
+  <li><code class="highlighter-rouge">tel</code>: your</li>
+</ul>
+:ET

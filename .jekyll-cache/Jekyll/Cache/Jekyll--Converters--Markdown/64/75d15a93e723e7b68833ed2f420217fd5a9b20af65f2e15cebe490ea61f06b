@@ -1,0 +1,28 @@
+I"�<div id="toc">
+  <div class="toc-title">
+    <i class="fa fa-list-ul"></i><span>In this post</span>
+  </div>
+  <div class="toc-content">
+<ul id="markdown-toc">
+  <li><a href="#your-personal-info" id="markdown-toc-your-personal-info">Your personal info</a></li>
+</ul>
+
+  </div>
+</div>
+
+<h2 id="your-personal-info">Your personal info</h2>
+
+<p>Open file <code class="highlighter-rouge">_data\me.yml</code> and modify (you don’t have to give all infos):</p>
+
+<ul>
+  <li><code class="highlighter-rouge">name</code>: your name, e.g. <em>Anh-Thi DINH</em>.</li>
+  <li><code class="highlighter-rouge">shor_name</code>: your short name (forename), e.g. <em>Thi</em>.</li>
+  <li><code class="highlighter-rouge">email</code>: your email, e.g. <em>dinhanhthi@gmail.com</em>.</li>
+  <li><code class="highlighter-rouge">tel</code>: your telephone number.</li>
+  <li><code class="highlighter-rouge">avatar</code>: your avatar’s url. For example, <code class="highlighter-rouge">img/avatar.png</code> means that a file called <code class="highlighter-rouge">avatar.png</code> is placed at <code class="highlighter-rouge">/img/</code> folder.</li>
+  <li><code class="highlighter-rouge">facebook</code>: your facebook username, e.g. <em>math2it</em>.</li>
+  <li><code class="highlighter-rouge">index-intro</code>: a bref discription about you. You have put the content between <code class="highlighter-rouge">""</code>.</li>
+  <li><code class="highlighter-rouge">cv</code>: your Curriculum Vitae file’s url. You can place your file in folder <code class="highlighter-rouge">/files/</code>.</li>
+  <li><code class="highlighter-rouge">favicon</code>: the small photo standing on the left of your website on a tab of Chrome.</li>
+</ul>
+:ET

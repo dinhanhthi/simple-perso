@@ -1,0 +1,20 @@
+---
+layout: base
+---
+
+{% include header.html type="page" %}
+
+<main role="main">
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-xl-8">
+          <div class="page-content {{page.custom-css}}">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+

@@ -1,0 +1,44 @@
+I"þ<p>This site contains all blog posts in this page.</p>
+
+<ul class="books">
+  
+  
+    
+      <li class="item">
+        
+        
+        <span class="title">
+          <a href="http://localhost:4000/simple-perso/how-to-modify-this-time">How to modify this theme?</a>
+        </span>
+        <span class="author"> &mdash;  06/12/2019.</span>
+        <span class="intro"></span>
+      </li>
+    
+  
+    
+      <li class="item">
+        
+        
+        <span class="title">
+          <a href="http://localhost:4000/simple-perso/how-to-modify-this-time-Copie">How to modify this theme?</a>
+        </span>
+        <span class="author"> &mdash;  06/12/2019.</span>
+        <span class="intro"></span>
+      </li>
+    
+  
+    
+      <li class="item">
+        
+        
+        <span class="title">
+          <a href="http://localhost:4000/simple-perso/for-the-editors-only">For me only</a>
+        </span>
+        <span class="author"> &mdash;  08/05/2019.</span>
+        <span class="intro"></span>
+      </li>
+    
+  
+</ul>
+
+:ET

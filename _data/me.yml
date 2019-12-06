@@ -1,0 +1,10 @@
+name: Simple Perso
+short_name: Perso
+email: dinhanhthi@gmail.com
+tel: "+01 23 45 67 89"
+avatar: img/avatar.png
+facebook: itsme
+index-intro: "Hi there! I'm <span style='color: #fff;'><strong>Perso</strong></span>, a simple and clean personal jekyll theme. I suit the ones who need a simple but beautiful theme to show the skills they have and also the projects they are working on."
+cv: "/files/mycv.pdf"
+favicon: img/favicon.ico
+location: "Paris, France"

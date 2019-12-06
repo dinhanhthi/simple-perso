@@ -1,0 +1,308 @@
+I"�M<div id="toc">
+  <div class="toc-title">
+    <i class="fa fa-list-ul"></i><span>In this post</span>
+  </div>
+  <div class="toc-content">
+<ul id="markdown-toc">
+  <li><a href="#front-matter" id="markdown-toc-front-matter">Front matter</a></li>
+  <li><a href="#add-table-of-contents" id="markdown-toc-add-table-of-contents">Add table of contents</a></li>
+  <li><a href="#reading-file" id="markdown-toc-reading-file">Reading file</a></li>
+  <li><a href="#my-learning-log" id="markdown-toc-my-learning-log">My learning log</a></li>
+  <li><a href="#inset-figures" id="markdown-toc-inset-figures">Inset figures</a></li>
+  <li><a href="#side-by-side-figure-and-content" id="markdown-toc-side-by-side-figure-and-content">Side by side figure and content</a></li>
+  <li><a href="#insert-codes" id="markdown-toc-insert-codes">Insert codes</a></li>
+  <li><a href="#insert-boxes" id="markdown-toc-insert-boxes">Insert boxes</a></li>
+  <li><a href="#steps" id="markdown-toc-steps">Steps</a></li>
+  <li><a href="#fonts--texts" id="markdown-toc-fonts--texts">Fonts &amp; Texts</a></li>
+  <li><a href="#math-expressions" id="markdown-toc-math-expressions">Math expressions</a></li>
+</ul>
+
+  </div>
+</div>
+
+<p>Fo writing the posts, you have to know about <strong>Markdown</strong>. It’s very easy to learn, let’s check <a href="https://markdown-it.github.io/">this</a>.</p>
+
+<h2 id="front-matter">Front matter</h2>
+
+<div class="alert alert-success" role="alert">
+  <p>If you don’t want to use any item below, don’t write it down. <code class="highlighter-rouge">math##  ##: 0</code> will be considered similarly to <code class="highlighter-rouge">math: 1</code> and jekyll understand that they are the same unless you don’t write either of them.</p>
+</div>
+
+<ul>
+  <li><code class="highlighter-rouge">math: 1</code> : only add if you wanna use math equations inside post.</li>
+  <li><code class="highlighter-rouge">categories: [cat1, cat2]</code> : add the categories/topics for posts. Refer to <a href="http://localhost:4000/simple-perso/categories">the list of categories</a>.</li>
+  <li><code class="highlighter-rouge">tags: [tag1, tag2]</code> : add tags for posts. Refer to <a href="http://localhost:4000/simple-perso/tags">the list of tags</a>.</li>
+  <li><code class="highlighter-rouge">img</code> : thumbnail of the post .</li>
+  <li><code class="highlighter-rouge">update: 1</code> : if you just update the content of the post.</li>
+  <li><code class="highlighter-rouge">writing: 1</code> : if you are writing the post, it’s not finished yet.</li>
+  <li><code class="highlighter-rouge">mychoice: 1</code> : if you make this post as your best choice.</li>
+  <li><code class="highlighter-rouge">vn: 1</code> : if the post is written in vietnamese.</li>
+  <li>Icon on each post/page: you have 2 options:
+    <ul>
+      <li><code class="highlighter-rouge">icon</code>: using Font Awesome, e.g. <code class="highlighter-rouge">"fab fa-airbnb"</code>. You can use <code class="highlighter-rouge">icon-color: #aafdb5</code> for coloring this icon.</li>
+      <li><code class="highlighter-rouge">icon-photo</code>: if you wanna use a photo. This photo must be placed inside <code class="highlighter-rouge">/img/header/</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="add-table-of-contents">Add table of contents</h2>
+
+<p>The table of contents is only shown if the min-width of the viewport is 1300 px. If you wanna insert the toc in some post, just add following line at the beginning of the post,</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include toc.html %}
+</code></pre></div></div>
+
+<h2 id="reading-file">Reading file</h2>
+
+<ul>
+  <li><code class="highlighter-rouge">reading: 1</code>: if you’re reading this book.</li>
+  <li><code class="highlighter-rouge">mychoice: 1</code>: if you make this book as your best choice.</li>
+</ul>
+
+<h2 id="my-learning-log">My learning log</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- {:.ongoing} Ongoing works! [my progress](/link){:target="_blank".}
+- {:.finish} Finished works!
+- {:.delay} Comback later!
+- {:.fail} Fail!
+</code></pre></div></div>
+
+<h2 id="inset-figures">Inset figures</h2>
+
+<ul>
+  <li><strong>Beginning of each post</strong>:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% assign img-url = '/img/post/ML' %}
+</code></pre></div>    </div>
+    <p>and then</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![alternative]({{img-url}}/figure.png})
+</code></pre></div>    </div>
+  </li>
+  <li>Normal inserting (without any class):
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![Describe](link/to/figures)
+</code></pre></div>    </div>
+  </li>
+  <li>Full 100% width:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{:.img-full-normal}
+![Describe](link/to/figures)
+</code></pre></div>    </div>
+  </li>
+  <li>Full but overflow outside the margin:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{:.img-full}
+![Describe](link/to/figures)
+</code></pre></div>    </div>
+  </li>
+  <li>Full but 50% width. We can use <strong>75</strong> for the 75% width.
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{:.img-full-50}
+![Describe](link/to/figures)
+</code></pre></div>    </div>
+  </li>
+  <li>Float to right:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{:.img-right}
+![Describe](link/to/figures)
+</code></pre></div>    </div>
+  </li>
+  <li>Float to left:
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{:.img-left}
+![Describe](link/to/figures)
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="side-by-side-figure-and-content">Side by side figure and content</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"columns-2"</span> <span class="na">markdown=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+Texts
+
+![alt](/link)
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h2 id="insert-codes">Insert codes</h2>
+
+<ul>
+  <li>If you wanna add tag <code class="highlighter-rouge">{% this %}</code>, use alert<code class="highlighter-rouge">{{"{% this "}}%}</code>.</li>
+  <li>If you like this <code class="highlighter-rouge">{{ this }}</code>, use <code class="highlighter-rouge">{{"{{ this "}}}}</code>.</li>
+  <li><strong>The rule</strong>: use <code class="highlighter-rouge">{{"</code> before the key-word and end with <code class="highlighter-rouge">"}}</code> before the end of key-word.</li>
+  <li>
+    <p><strong>An easier way</strong>: use <code class="highlighter-rouge">{% raw %}</code> and <code class="highlighter-rouge">{% endraw %}</code> around the key-word. These two commands are also used for a block of codes,</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~~ {% raw %}{% for %}
+// line of codes
+{% end for %}{% endraw %} ~~~
+</code></pre></div>    </div>
+
+    <p><strong>Tips</strong>: For a beautiful display, put <code class="highlighter-rouge">{% raw %}</code> and <code class="highlighter-rouge">{% endraw %}</code> exactly like the above code.</p>
+  </li>
+</ul>
+
+<h2 id="insert-boxes">Insert boxes</h2>
+
+<ul>
+  <li>
+    <p>Terminal box</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{:.terminal}
+$ sudo apt-get update
+</code></pre></div>    </div>
+  </li>
+  <li>Warning bootstrap : <a href="https://getbootstrap.com/docs/4.1/components/alerts/" target="_blank">here</a>.
+    <ul>
+      <li>
+        <p>Success box (green):</p>
+
+        <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{:.alert.alert-success}
+Content
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Warning (yellow)</p>
+
+        <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{:.alert.alert-warning}
+Content
+</code></pre></div>        </div>
+      </li>
+      <li>
+        <p>Danger (red)</p>
+        <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{:.alert.alert-danger}
+Content
+</code></pre></div>        </div>
+      </li>
+    </ul>
+
+    <div class="alert alert-warning" role="alert">
+      <p>If you wanna insert a block of math inside above boxes, don’t foget to wrap them inside a p tag.</p>
+    </div>
+  </li>
+  <li>
+    <p>Quotes I like (hide/show)</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tomTat"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"btTomTat"</span> <span class="na">class=</span><span class="s">"collapsed"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span> <span class="na">href=</span><span class="s">"#ndTomTat"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span&gt;</span>Highlights I like<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"ndTomTat"</span> <span class="na">markdown=</span><span class="s">"1"</span> <span class="na">class=</span><span class="s">"collapse multi-collapse ndTomTat"</span><span class="nt">&gt;</span>
+Contents.
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Definition box</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"def-box"</span> <span class="na">markdown=</span><span class="s">"1"</span> <span class="na">id=</span><span class="s">"dn1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"box-title"</span> <span class="na">markdown=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+  Title
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"box-content"</span> <span class="na">markdown=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+  Content
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Gray box of code : add class <code class="highlighter-rouge">{:.bg-gray}</code> before the code.</li>
+  <li>Table : If you wanna show the right line of each column, just use the class <code class="highlighter-rouge">.bd-right</code> together with class <code class="highlighter-rouge">.table</code>.</li>
+</ul>
+
+<h2 id="steps">Steps</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span>  <span class="na">class=</span><span class="s">"thi-step"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"step"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"step-number"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"step-content"</span> <span class="na">markdown=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+Content of step 1.
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"step"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"step-number"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"step-content"</span> <span class="na">markdown=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+Content of step 2.
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h2 id="fonts--texts">Fonts &amp; Texts</h2>
+
+<ul>
+  <li>Badges
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tbadge badge-green"</span><span class="nt">&gt;</span>text<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tbadge badge-yellow"</span><span class="nt">&gt;</span>text<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"tbadge badge-gray"</span><span class="nt">&gt;</span>text<span class="nt">&lt;/span&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>References at the end of each post”
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{:.ref}
+Source of figures used in this post:
+</code></pre></div>    </div>
+  </li>
+  <li>Marked texts: <code class="highlighter-rouge">&lt;mark&gt;texts&lt;/mark&gt;</code></li>
+  <li>Keyboard: <code class="highlighter-rouge">&lt;kbd&gt;B&lt;/kbd&gt;</code></li>
+  <li>More link:
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include more.html content="[text](link)" %}
+</code></pre></div>    </div>
+  </li>
+  <li>Subject: <code class="highlighter-rouge">&lt;sbj&gt;Texts&lt;/sbj&gt;</code></li>
+  <li>Target blank
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[alt](/link){:target="_blank"}
+</code></pre></div>    </div>
+  </li>
+  <li>For the series of posts
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{:.series}
+**For this series** : [part 1](/link), [part 2](/link).
+</code></pre></div>    </div>
+  </li>
+  <li>Text colors: using these classes <code class="highlighter-rouge">tgreen</code>, <code class="highlighter-rouge">tpink</code>, <code class="highlighter-rouge">tyellow</code>.</li>
+  <li><code class="highlighter-rouge">h2</code> with smaller font-size (subject): add class <code class="highlighter-rouge">.subject</code> before this <code class="highlighter-rouge">h2</code>.</li>
+</ul>
+
+<h2 id="math-expressions">Math expressions</h2>
+
+<ul>
+  <li>Inline math, use <code class="highlighter-rouge">$math-expression$</code></li>
+  <li>
+    <p>Block of math, use <code class="highlighter-rouge">$$math block$$</code> or</p>
+
+    <div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$$</span><span class="nb">
+x</span><span class="p">^</span><span class="nb">n </span><span class="o">+</span><span class="nb"> y</span><span class="p">^</span><span class="nb">n </span><span class="o">=</span><span class="nb"> z</span><span class="p">^</span><span class="nb">n
+</span><span class="p">$$</span>
+</code></pre></div>    </div>
+  </li>
+  <li>If you wanna insert some special characters, you must put <code class="highlighter-rouge">\</code> before this character, for instance, <code class="highlighter-rouge">\\{ 1,2,3 \\}</code> gives $\{ 1,2,3 \}$</li>
+  <li>If you type inline maths which contain chatacters <code class="highlighter-rouge">_</code>, you must add <code class="highlighter-rouge">\</code> before each of them, for example, <code class="highlighter-rouge">a\_1</code> give $a_1$.</li>
+  <li>Don’t use <code class="highlighter-rouge">||</code> for absolute values, let’s use <code class="highlighter-rouge">\vert \vert</code> instead.</li>
+  <li>Don’t use <code class="highlighter-rouge">\left\| \right\|</code> for norms, use <code class="highlighter-rouge">\Vert \Vert</code> instead.</li>
+  <li>Don’t use <code class="highlighter-rouge">*</code> for star symbols, use <code class="highlighter-rouge">\ast</code> instead.</li>
+  <li>If you wanna type <code class="highlighter-rouge">\\</code>, type <code class="highlighter-rouge">\\\\</code> instead.</li>
+  <li>
+    <p>If you wanna type an inline matrix, e.g., $[A]=\begin{bmatrix}1 &amp; 2 \\ 2 &amp; 3.999 \end{bmatrix}$, type like below,</p>
+
+    <div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$</span><span class="o">[</span><span class="nb">A</span><span class="o">]=</span><span class="nv">\begin</span><span class="p">{</span><span class="nb">bmatrix</span><span class="p">}</span><span class="m">1</span><span class="nb"> </span><span class="p">&amp;</span><span class="nb"> </span><span class="m">2</span><span class="nb"> </span><span class="nv">\\\\</span><span class="nb"> </span><span class="m">2</span><span class="nb"> </span><span class="p">&amp;</span><span class="nb"> </span><span class="m">3</span><span class="nb">.</span><span class="m">999</span><span class="nb"> </span><span class="nv">\end</span><span class="p">{</span><span class="nb">bmatrix</span><span class="p">}</span><span class="nb">,</span><span class="p">$</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>In order to use <code class="highlighter-rouge">\label{}</code> and <code class="highlighter-rouge">\eqref{}</code> like in latex, use</p>
+
+    <div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$$</span><span class="nb">
+</span><span class="nv">\begin</span><span class="p">{</span><span class="nb">align</span><span class="p">}</span><span class="nv">\tag</span><span class="p">{</span><span class="m">1</span><span class="p">}</span><span class="nv">\label</span><span class="p">{</span><span class="nb">eq</span><span class="m">1</span><span class="p">}</span><span class="nb">
+x</span><span class="p">^</span><span class="nb">n </span><span class="o">+</span><span class="nb"> y</span><span class="p">^</span><span class="nb">n </span><span class="o">=</span><span class="nb"> z</span><span class="p">^</span><span class="nb">n
+</span><span class="nv">\end</span><span class="p">{</span><span class="nb">align</span><span class="p">}</span><span class="nb">
+</span><span class="p">$$</span>
+
+Call again equation <span class="p">$</span><span class="nv">\eqref</span><span class="p">{</span><span class="nb">eq</span><span class="m">1</span><span class="p">}$</span>.
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>You don’t need an enviroment <code class="highlighter-rouge">align</code> or <code class="highlighter-rouge">equation</code> to use <code class="highlighter-rouge">\label</code>, you can use it with <code class="highlighter-rouge">$$</code> only, for example,</p>
+
+    <div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">$$</span><span class="nb">
+x</span><span class="p">^</span><span class="nb">n </span><span class="o">+</span><span class="nb"> y</span><span class="p">^</span><span class="nb">n </span><span class="o">=</span><span class="nb"> z</span><span class="p">^</span><span class="nb">n </span><span class="nv">\tag</span><span class="p">{</span><span class="m">1</span><span class="p">}</span><span class="nv">\label</span><span class="p">{</span><span class="nb">eq</span><span class="m">1</span><span class="p">}</span><span class="nb">
+</span><span class="p">$$</span>
+
+Call again equation <span class="p">$</span><span class="nv">\eqref</span><span class="p">{</span><span class="nb">eq</span><span class="m">1</span><span class="p">}$</span>.
+</code></pre></div>    </div>
+  </li>
+</ul>
+:ET

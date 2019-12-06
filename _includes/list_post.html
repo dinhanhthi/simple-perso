@@ -1,0 +1,38 @@
+<ul class="books">
+  {% assign count = 0 %}
+  {% for item in site.posts %}
+    {% if include.limit %}
+      {% if count < include.limit %}
+        {% assign count = count | plus: 1 %}
+        <li class="item">
+          {% if item.writing %}
+            <span class="tbadge badge-gray">I'm writing</span>
+          {% endif %}
+          {% if item.mychoice %}
+            <span class="tbadge badge-yellow">my choice</span>
+          {% endif %}
+          <span class="title">
+            <a href="{{site.url}}{{site.baseurl}}{{item.url}}">{{item.title}}</a>
+          </span>
+          <span class="author"> &mdash; {% if item.update %}updated on{% endif %} {{ item.date | date: "%d/%m/%Y" }}.</span>
+          <span class="intro">{{item.description}}</span>
+        </li>
+      {% endif %}
+    {% else %}
+      <li class="item">
+        {% if item.writing %}
+          <span class="tbadge badge-gray">I'm writing</span>
+        {% endif %}
+        {% if item.mychoice %}
+          <span class="tbadge badge-yellow">my choice</span>
+        {% endif %}
+        <span class="title">
+          <a href="{{site.url}}{{site.baseurl}}{{item.url}}">{{item.title}}</a>
+        </span>
+        <span class="author"> &mdash; {% if item.update %}updated on{% endif %} {{ item.date | date: "%d/%m/%Y" }}.</span>
+        <span class="intro">{{item.description}}</span>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+

@@ -1,0 +1,29 @@
+I"Å<div class="tag-list">
+  
+    
+    <a class="tag" href="#others">others</a>
+  
+</div>
+
+<div class="tag-item" id="others">
+    <h2>others</h2>
+    <ul class="books">
+      
+        <li class="item">
+          <span class="title">
+            <a href="/how-to-modify-this-time">How to modify this theme?</a>
+          </span>
+          <span class="author"> &mdash; 06 Dec 2019.</span>
+        </li>
+      
+        <li class="item">
+          <span class="title">
+            <a href="/for-the-editors-only">For me only</a>
+          </span>
+          <span class="author"> &mdash; 08 May 2019.</span>
+        </li>
+      
+    </ul>
+  </div>
+
+:ET

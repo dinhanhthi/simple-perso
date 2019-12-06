@@ -1,0 +1,82 @@
+I"M<div id="toc">
+  <div class="toc-title">
+    <i class="fa fa-list-ul"></i><span>In this post</span>
+  </div>
+  <div class="toc-content">
+<ul id="markdown-toc">
+  <li><a href="#how-to-create-a-github-page" id="markdown-toc-how-to-create-a-github-page">How to create a Github Page?</a></li>
+  <li><a href="#how-to-apply-simple-perso" id="markdown-toc-how-to-apply-simple-perso">How to apply Simple Perso?</a></li>
+  <li><a href="#get-unexpected-errors" id="markdown-toc-get-unexpected-errors">Get unexpected errors?</a></li>
+</ul>
+
+  </div>
+</div>
+
+<p>In order to use this theme and create for yourself a website, you need to do 2 main steps:</p>
+
+<ol>
+  <li>Create a website using Github Pages (your website will host on Github Page) with any theme.</li>
+  <li>Apply any theme you like on it, in this case, you are going to apply Simple Perso.</li>
+</ol>
+
+<h2 id="how-to-create-a-github-page">How to create a Github Page?</h2>
+
+<p>In the case you don’t have any Github Page, follow following rules, otherwise please step to next steps.</p>
+
+<ol>
+  <li><a href="https://github.com/join?source=header-home">Create</a> a Github account, don’t forget to verify your email before loging in. I suppose that you signed up with name <code class="highlighter-rouge">dinhanhthi</code>.</li>
+  <li>Login to your Github account.</li>
+  <li>Create a new repository by clicking <strong>New</strong> on the right side of <em>Repositories</em> section and naming your repo with <code class="highlighter-rouge">&lt;your-account&gt;.github.io</code>. For example, my Github account is <code class="highlighter-rouge">dinhanhthi</code>, so I name this repo <code class="highlighter-rouge">dinhanhthi.github.io</code>. We need to name the repo like this because your website will have an address like <code class="highlighter-rouge">https://&lt;your-account&gt;.github.io</code>.</li>
+  <li>Basically, you now have a place where you can put your website, you can choose either a built-in theme from Github or an external theme.
+    <ul>
+      <li>If you wanna apply <strong><a href="https://github.com/dinhanhthi/simple-perso">Simple Perso</a></strong> (or <a href="http://jekyllthemes.org/">other external theme</a>), please step to next section and ignore following steps in this section.</li>
+      <li>If you wanna create immediately a buit-in theme from Github, please continue to step 5.</li>
+    </ul>
+  </li>
+  <li>On your repo on github, click on tab <strong>Settings</strong>, on the left hand side, choose tab <strong>Options</strong> (default) and then go to section <strong>Github Pages</strong>, click on <strong>Choose a theme</strong>.</li>
+  <li>Choose a theme you like and then click on <strong>Select theme</strong></li>
+  <li>A new page appears, write something on <strong>Commit changes</strong> and then click on <strong>Commit changes</strong>.</li>
+  <li>Done, now you have a page, check it out at <code class="highlighter-rouge">https://&lt;your-account&gt;.github.io</code>.</li>
+</ol>
+
+<h2 id="how-to-apply-simple-perso">How to apply Simple Perso?</h2>
+
+<ol>
+  <li>Download and install <strong><a href="https://desktop.github.com/">Github Client</a></strong> (GC). GC helps you “upload” changes from local host (on your own computer) to your remote (on Github server).</li>
+  <li>Login to GC with the account created in step 1.</li>
+  <li>Clone the repo created in step 3 of previous section to your local computer:
+    <ol>
+      <li>Come back to the repo’s directory, click on <strong>Set up in Desktop</strong>, a popup appears to ask you “<em>Open Github Desktop?</em>”, choose <strong>Open Github Desktop</strong></li>
+      <li>This will open GC on your computer, click on button <strong>Clone</strong></li>
+      <li>Choose the location where you save your repo on your computer. A folder whose name is <strong>&lt;your-account&gt;.github.io</strong> will be created.</li>
+    </ol>
+  </li>
+  <li>From this step, you will apply a theme <a href="http://jekyllthemes.org">downloaded from the internet</a> for your Github page. In this case, you will apply <strong><a href="https://github.com/dinhanhthi/TaniaJekyll">TaniaJekyll</a></strong>.</li>
+  <li>Download <a href="https://github.com/dinhanhthi/TaniaJekyll">TaniaJekyll</a> to your local computer (a file .zip)</li>
+  <li>Delete all files and folders in folder <strong>&lt;your-account&gt;.github.io</strong> created in step 3.3.</li>
+  <li>Extract all files and folders from file .zip in step 5 to folder <strong>&lt;your-account&gt;.github.io</strong></li>
+  <li>Open file <strong>_config.yml</strong> and change some fields in this file
+    <ol>
+      <li><code class="highlighter-rouge">title</code>: your website’s name</li>
+      <li><code class="highlighter-rouge">description</code>: your website’s description</li>
+      <li><code class="highlighter-rouge">baseurl</code>: leave blank (i.e., <code class="highlighter-rouge">""</code>)</li>
+      <li><code class="highlighter-rouge">url</code>: <code class="highlighter-rouge">&lt;your-account&gt;.github.io</code></li>
+      <li><code class="highlighter-rouge">paginate</code>: number of posts on each page (default is 28)</li>
+      <li><code class="highlighter-rouge">banner</code>: directory to your website’s banner</li>
+      <li><code class="highlighter-rouge">favicon</code>: directory to your website’s favicon (icon appears on the left on browser’s tab)</li>
+      <li><code class="highlighter-rouge">user</code>: change all your personal information (<code class="highlighter-rouge">name</code>, <code class="highlighter-rouge">email</code>, <code class="highlighter-rouge">website</code>, <code class="highlighter-rouge">avatar</code>,…)</li>
+      <li>Save and close <strong>_config.yml</strong></li>
+    </ol>
+  </li>
+  <li>Open Github Desktop to see the changes
+    <ol>
+      <li>Write something on field commit</li>
+      <li>Click on <strong>Commit to master</strong> and then <strong>Publish branch</strong></li>
+    </ol>
+  </li>
+  <li>All done! Go to <strong>https://&lt;your-account&gt;.github.io</strong> to see the changes, you may wait a little minutes to get the changes.</li>
+</ol>
+
+<h2 id="get-unexpected-errors">Get unexpected errors?</h2>
+
+:ET

@@ -1,0 +1,33 @@
+title: Simple Perso
+description: A simple and beautiful personal jekyll theme.
+baseurl: "/simple-perso" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+title-separator: "-"
+
+disqus:
+
+google_analytics:
+
+fb_app_id: 
+
+# Build settings
+timezone: "Europe/Paris"
+markdown: kramdown
+kramdown:
+  input: GFM
+highlighter: rouge
+permalink: /:title
+
+sass:
+  style: compact
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - CNAME
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+

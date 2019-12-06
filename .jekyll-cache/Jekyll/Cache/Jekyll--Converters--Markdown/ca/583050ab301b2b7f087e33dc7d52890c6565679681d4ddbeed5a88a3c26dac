@@ -1,0 +1,60 @@
+I"Y<div id="toc">
+  <div class="toc-title">
+    <i class="fa fa-list-ul"></i><span>In this post</span>
+  </div>
+  <div class="toc-content">
+<ul id="markdown-toc">
+  <li><a href="#your-personal-info" id="markdown-toc-your-personal-info">Your personal info</a></li>
+  <li><a href="#index-page" id="markdown-toc-index-page">Index page</a>    <ul>
+      <li><a href="#find-me-on" id="markdown-toc-find-me-on">Find me on</a></li>
+      <li><a href="#my-learning-log" id="markdown-toc-my-learning-log">My learning log</a></li>
+    </ul>
+  </li>
+</ul>
+
+  </div>
+</div>
+
+<h2 id="your-personal-info">Your personal info</h2>
+
+<p>Open file <code class="highlighter-rouge">_data\me.yml</code> and modify (you don’t have to give all infos):</p>
+
+<ul>
+  <li><code class="highlighter-rouge">name</code>: your name, e.g. <em>Anh-Thi DINH</em>.</li>
+  <li><code class="highlighter-rouge">shor_name</code>: your short name (forename), e.g. <em>Thi</em>.</li>
+  <li><code class="highlighter-rouge">email</code>: your email, e.g. <em>dinhanhthi@gmail.com</em>.</li>
+  <li><code class="highlighter-rouge">tel</code>: your telephone number.</li>
+  <li><code class="highlighter-rouge">avatar</code>: your avatar’s url. For example, <code class="highlighter-rouge">img/avatar.png</code> means that a file called <code class="highlighter-rouge">avatar.png</code> is placed at <code class="highlighter-rouge">/img/</code> folder.</li>
+  <li><code class="highlighter-rouge">facebook</code>: your facebook username, e.g. <em>math2it</em>.</li>
+  <li><code class="highlighter-rouge">index-intro</code>: a bref discription about you. You have put the content between <code class="highlighter-rouge">""</code>.</li>
+  <li><code class="highlighter-rouge">cv</code>: your Curriculum Vitae file’s url. You can place your file in folder <code class="highlighter-rouge">/files/</code>.</li>
+  <li><code class="highlighter-rouge">favicon</code>: the small photo standing on the left of your website in a tab of Chrome.</li>
+</ul>
+
+<h2 id="index-page">Index page</h2>
+
+<h3 id="find-me-on">Find me on</h3>
+
+<p>Modify file <code class="highlighter-rouge">_data\social.yml</code>:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">name</code>: name of the platform.</li>
+  <li><code class="highlighter-rouge">icon</code>: an icon for this platform. You should use black &amp; white icon (with transparent background). The photo should be placed in <code class="highlighter-rouge">\img\social\</code></li>
+  <li><code class="highlighter-rouge">url</code>: your profile url on this platform.</li>
+  <li><code class="highlighter-rouge">opacity</code>: if you want the icon be lighter.</li>
+</ul>
+
+<h3 id="my-learning-log">My learning log</h3>
+
+<p>Modify file <code class="highlighter-rouge">pages\my-learning-log.md</code>.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">{:.finish}</code>: for the finished tasks.</li>
+  <li><code class="highlighter-rouge">{:.ongoing}</code>: for the ongoing tasks.</li>
+  <li><code class="highlighter-rouge">{:.delay}</code>: for the delayed tasks.</li>
+  <li><code class="highlighter-rouge">{:.fail}</code>: for interrupted tasks.</li>
+</ul>
+
+<p>For the badges:</p>
+
+:ET
