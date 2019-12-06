@@ -4,6 +4,17 @@ A simple and beautiful personal jekyll theme designed by [DINH Anh-Thi](http://d
 
 ![overview](./img/defaultCoverPost.jpg)
 
+## Features
+
+- Social profiles.
+- Learning log.
+- Recent projects.
+- Reading lists.
+- Blog posts.
+- Note taking.
+- Recent photos.
+- Posts search.
+
 ## Installation
 
 - 🌟 [Demo](https://dinhanhthi.github.io/simple-perso/)
