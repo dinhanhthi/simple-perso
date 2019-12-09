@@ -81,7 +81,7 @@ Modify file `_data/book.yml` (all the fields should be placed inside quotation m
 
 ### Blog posts ([check]({{site.url}}{{site.baseurl}}/blog){:target="_blank"})
 
-All the blog posts must be placed in folder `_posts/` and their name should be in the form of `2019-12-06-name-of-the-post.md` (You have to use [markdown](https://markdown-it.github.io/) to write the posts). List of posts are showed in `/blog` (file `/pages/blog.md`) and on the index page.
+All the blog posts must be placed in folder `_posts/` and their name should be in the form of `YYYY-MM-DD-name-of-the-post.md` (You have to use [markdown](https://markdown-it.github.io/) to write the posts). List of posts are showed in `/blog` (file `/pages/blog.md`) and on the index page.
 
 At the beginning of each post, you should indicate some information
 
